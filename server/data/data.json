@@ -1,0 +1,216 @@
+{
+    "manufacturers": [
+      {
+        "_id": "m1",
+        "name": "Sweet Dreams Ltd",
+        "country": "Israel",
+        "logo": "https://example.com/sweet-dreams.png",
+        "contact": {
+          "email": "info@sweetdreams.com",
+          "phone": "+972-3-1234567"
+        },
+        "established": 1990
+      },
+      {
+        "_id": "m2",
+        "name": "Chocolate Heaven",
+        "country": "Belgium",
+        "logo": "https://example.com/choc-heaven.png",
+        "contact": {
+          "email": "support@chocheaven.be",
+          "phone": "+32-2-1234567"
+        },
+        "established": 1955
+      },
+      {
+        "_id": "m3",
+        "name": "Gummy World",
+        "country": "Germany",
+        "logo": "https://example.com/gummy-world.png",
+        "contact": {
+          "email": "hello@gummyworld.de",
+          "phone": "+49-30-1234567"
+        },
+        "established": 1982
+      }
+    ],
+    "categories": [
+      {
+        "_id": "c1",
+        "name": "Chocolate Bars",
+        "description": "Classic chocolate bars in various flavors",
+        "icon": "🍫"
+      },
+      {
+        "_id": "c2",
+        "name": "Gummy Candies",
+        "description": "Chewy gummy candies in fun shapes",
+        "icon": "🐻"
+      },
+      {
+        "_id": "c3",
+        "name": "Hard Candy",
+        "description": "Long-lasting hard candies",
+        "icon": "🍭"
+      },
+      {
+        "_id": "c4",
+        "name": "Chewing Gum",
+        "description": "Various flavored chewing gums",
+        "icon": "🌟"
+      },
+      {
+        "_id": "c5",
+        "name": "Toffee",
+        "description": "Chewy toffee candies",
+        "icon": "🍬"
+      }
+    ],
+    "kosherTypes": [
+      {
+        "_id": "k1",
+        "name": "Badatz",
+        "symbol": "בדץ",
+        "description": "Highest kosher certification"
+      },
+      {
+        "_id": "k2",
+        "name": "Rabanut",
+        "symbol": "רבנות",
+        "description": "Standard kosher certification"
+      },
+      {
+        "_id": "k3",
+        "name": "Parve",
+        "symbol": "פרווה",
+        "description": "Contains no dairy or meat"
+      }
+    ],
+    "candies": [
+      {
+        "_id": "candy1",
+        "name": "Dark Dream",
+        "manufacturerId": "m2",
+        "description": "Rich dark chocolate with 70% cocoa",
+        "price": 8.99,
+        "categoryIds": ["c1"],
+        "kosherTypeIds": ["k1", "k3"],
+        "ingredients": [
+          "cocoa mass",
+          "cocoa butter",
+          "sugar",
+          "vanilla extract"
+        ],
+        "nutritionFacts": {
+          "servingSize": "100g",
+          "calories": 545,
+          "fat": 31,
+          "carbs": 61,
+          "protein": 5
+        },
+        "inStock": 150,
+        "averageRating": 4.8,
+        "manufactureDate": "2024-01-15",
+        "expiryDate": "2024-12-15",
+        "allergens": ["may contain nuts"],
+        "isGlutenFree": true,
+        "isVegan": true
+      },
+      {
+        "_id": "candy2",
+        "name": "Rainbow Bears",
+        "manufacturerId": "m3",
+        "description": "Colorful fruit-flavored gummy bears",
+        "price": 4.99,
+        "categoryIds": ["c2"],
+        "kosherTypeIds": ["k2", "k3"],
+        "ingredients": [
+          "glucose syrup",
+          "sugar",
+          "gelatin",
+          "natural flavors",
+          "food coloring"
+        ],
+        "nutritionFacts": {
+          "servingSize": "100g",
+          "calories": 340,
+          "fat": 0,
+          "carbs": 77,
+          "protein": 6.9
+        },
+        "inStock": 300,
+        "averageRating": 4.5,
+        "manufactureDate": "2024-02-01",
+        "expiryDate": "2024-08-01",
+        "allergens": [],
+        "isGlutenFree": true,
+        "isVegan": false
+      },
+      {
+        "_id": "candy3",
+        "name": "Mint Fresh",
+        "manufacturerId": "m1",
+        "description": "Long-lasting mint hard candy",
+        "price": 2.99,
+        "categoryIds": ["c3"],
+        "kosherTypeIds": ["k2", "k3"],
+        "ingredients": [
+          "sugar",
+          "glucose syrup",
+          "natural mint flavor",
+          "color (E141)"
+        ],
+        "nutritionFacts": {
+          "servingSize": "100g",
+          "calories": 390,
+          "fat": 0,
+          "carbs": 98,
+          "protein": 0
+        },
+        "inStock": 500,
+        "averageRating": 4.2,
+        "manufactureDate": "2024-01-20",
+        "expiryDate": "2025-01-20",
+        "allergens": [],
+        "isGlutenFree": true,
+        "isVegan": true
+      }
+    ],
+    "users": [
+      {
+        "_id": "u1",
+        "username": "candylover",
+        "email": "candy@example.com",
+        "password": "hashedPassword123",
+        "favoriteIds": ["candy1", "candy2"],
+        "role": "USER"
+      },
+      {
+        "_id": "u2",
+        "username": "admin",
+        "email": "admin@candystore.com",
+        "password": "hashedPassword456",
+        "role": "ADMIN"
+      }
+    ],
+    "reviews": [
+      {
+        "_id": "r1",
+        "candyId": "candy1",
+        "userId": "u1",
+        "rating": 5,
+        "content": "Best dark chocolate I've ever had!",
+        "date": "2024-02-15",
+        "likes": 12
+      },
+      {
+        "_id": "r2",
+        "candyId": "candy2",
+        "userId": "u1",
+        "rating": 4,
+        "content": "Great gummy bears, very fruity",
+        "date": "2024-02-16",
+        "likes": 8
+      }
+    ]
+  }
